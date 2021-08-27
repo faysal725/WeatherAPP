@@ -1,0 +1,28 @@
+.search_input{
+    height: 40px;
+    background-color: rgba(184, 175, 175, 0.144);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    font-size: large;
+    width:80%;
+}
+
+
+.search_submit{
+    background-color: rgb(192, 83, 83);
+    width: 25%;
+    height: 60px;
+    border: none;
+    color:white;
+    font-size: larger;
+    font-weight: bold;
+    transition: background-color 0.25s;
+    transition: border-radius 0.35s;
+}
+
+.search_submit:hover{
+    background-color: rgba(214, 42, 12, 0.733);
+    border-radius: 8px;
+}

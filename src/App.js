@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import CardHolder from './Components/CardHolder/CardHolder';
+import FiveDays from './Components/FiveDays/FiveDays';
+import GlassCard from './Components/GlassCard/GlassCard';
+import AuthHolder from './Components/AuthHolder/AuthHolder';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+       <Router>
+       <Switch>
+         <Route exact path="/">
+          <GlassCard></GlassCard>
+         </Route>
+         <Route path="/glassCard">
+          <GlassCard></GlassCard>
+         </Route>
+         <Route path="/fiveDays">
+           <FiveDays></FiveDays>
+         </Route>
+         <Route path="/auth">
+           <AuthHolder></AuthHolder>
+         </Route>
+       </Switch>
+     </Router>
   );
 }
 
