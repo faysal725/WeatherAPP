@@ -12,3 +12,4 @@
 3.React Router
 4.Axios
 5.Bootstrap
+6.React Redux
